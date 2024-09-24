@@ -12,6 +12,7 @@ const Navbar = () => {
   return (
     <header >
       <h3>izzy.africa</h3>
+      <div className="nav-links">
       <nav ref={navRef}>
         <a href="#">Events</a>
         <a href="#">Pricing</a>
@@ -22,41 +23,19 @@ const Navbar = () => {
           <FaTimes/>
         </button>
 
+
       </nav>
+      </div>
+
+
+      
       <button className="nav-btn" onClick={showNavbar}>
           <FaBars/>
         </button>
 
-      {/* <div className="overlay">
-      <div className="header-inner container">
-      <div className="logo-nav-btn">
-        {/* <div> 
-          <a href="/">
-            <img src={logo} alt="plus2.34_logo" />
-          </a>
-        </div> */}
-       
-        {/* <div>
-          <nav ref={navRef}>
-            <a href="/">ABOUT</a>
-            <a href="/">SHOP</a>
-            <a href="/">GALLERY</a>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-              <FaTimes />
-            </button>
-          </nav>
-        </div> */}
-       
-        {/* <div>
-          <button className="nav-btn" onClick={showNavbar}>
-            <FaBars />
-          </button>
-          
-          <button id="support"  className="btn btn-light">
-            support us
-            </button>
-        </div>
-      </div> */}
+        <button className="sign-up-btn">
+          Sign Up
+        </button>
 
     </header>
   );

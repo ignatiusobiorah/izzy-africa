@@ -2,18 +2,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     
+    .nav-links {
+        margin-left: 6rem;
 
-    nav a {
-        margin: 0 2rem;
-        color: #ffffff;
-        text-decoration: none;
-    
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 2rem;
+        }
     }
 
     a:hover {
 color: red;
+    }
+
+    .sign-up-btn {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 50px;
     }
 
     .nav-btn {
@@ -22,7 +30,7 @@ color: red;
         background: transparent;
         border: none;
         outline: none;
-        color: blue;
+        color: #ffffff;
         visibility: hidden;
         opacity: 0;
         font-size: 1.5rem;
@@ -47,13 +55,14 @@ color: red;
             background-color: orange;
             transition: 1s;
             transform: translateY(-100vh);
-            
 
         } 
 
         .nav-btn {
             visibility: visible;
             opacity: 1;
+            position: absolute;
+            right: 2rem;
         }
 
         .responsive_nav {
@@ -67,6 +76,10 @@ color: red;
             
         }
 
+        .sign-up-btn {
+            visibility: hidden;
+            opacity: 0;
+        }
     }
 
 }
