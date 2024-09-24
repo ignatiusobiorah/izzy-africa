@@ -4,24 +4,36 @@ header {
     justify-content: space-between;
     padding: 1rem 2rem;
     
+    h3 {
+        color: #ffffff;
+        font-size: 30px;
+    }
+
     .nav-links {
         margin-left: 6rem;
 
         a {
             text-decoration: none;
-            color: #ffffff;
+            color: #000000;
             margin: 0 2rem;
         }
     }
 
     a:hover {
-color: red;
+        color: orangered;
     }
 
     .sign-up-btn {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 2rem;
         border: none;
         border-radius: 50px;
+        color: orangered;
+        cursor: pointer;
+
+        &:hover {
+            color: #ffffff;
+            background-color: orangered;
+        }
     }
 
     .nav-btn {
@@ -52,17 +64,19 @@ color: red;
             align-items: center;
             justify-content: center;
             gap: 1.5rem;
-            background-color: orange;
+            background-color: #ffffff;
             transition: 1s;
             transform: translateY(-100vh);
+            
 
         } 
 
         .nav-btn {
             visibility: visible;
             opacity: 1;
-            position: absolute;
-            right: 2rem;
+            // position: absolute;
+        // margin-left: 10rem;
+            color: orangered;
         }
 
         .responsive_nav {
