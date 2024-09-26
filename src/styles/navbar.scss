@@ -16,11 +16,12 @@ header {
             text-decoration: none;
             color: #000000;
             margin: 0 2rem;
-        }
-    }
 
-    a:hover {
-        color: orangered;
+            &:hover {
+                color: orangered;
+                // transition: 2s; Transition doesn't work on hover
+            }
+        }
     }
 
     .sign-up-btn {
@@ -70,12 +71,12 @@ header {
             
 
         } 
-
+        // The position of the nav-btn is not right on mobile
         .nav-btn {
             visibility: visible;
             opacity: 1;
             // position: absolute;
-        // margin-left: 10rem;
+            // margin-left: 10rem;
             color: orangered;
         }
 

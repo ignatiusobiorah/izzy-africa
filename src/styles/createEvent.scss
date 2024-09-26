@@ -1,0 +1,45 @@
+.create-event {
+    display: flex;
+    width: 100vw;
+    padding: 1rem 4rem;
+    gap: 2rem;
+    .create-event-text {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            padding: 2rem;
+            font-size: 2rem;
+        }
+
+        p {
+            padding: 0.5rem 2rem 2rem 2rem  ;
+        }
+
+        button {
+            margin-left: 2rem;
+            padding: 0.5rem 0;
+            border-radius: 50px;
+            border-color: orangered;
+            color: orangered;
+            background-color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+
+            &:hover {
+                background-color: orangered;
+                color: #ffffff;
+                border: none;
+                transition: 2s;
+            }
+        }
+    }
+
+    .create-event-image {
+        img {
+            width: 35rem;
+            height: 20rem;
+            border-radius: 50px;
+        }
+    }
+}
