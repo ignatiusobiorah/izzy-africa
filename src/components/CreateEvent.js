@@ -1,5 +1,6 @@
-import React from 'react'
-import ticket from "../images/ticket-2974645_640.jpg"
+import React from 'react';
+import ticket from "../images/ticket-2974645_640.jpg";
+import { Link } from 'react-router-dom';
 
 const CreateEvent = () => {
   return (
@@ -13,9 +14,12 @@ const CreateEvent = () => {
             Simplify your event planning with a centralized 
             platform for ticket sales, marketing, and organization.
             </p>
-            <button>
-                Create Event
-            </button>
+            <Link className='create-link' to="/login">
+                <button>
+                    Create Event
+                </button>
+            </Link>
+
         </div>
         <div className='create-event-image'>
             <img src={ticket} alt='ticket' />

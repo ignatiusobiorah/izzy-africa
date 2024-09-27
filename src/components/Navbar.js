@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -14,10 +15,10 @@ const Navbar = () => {
       <h3>izzy.africa</h3>
       <div className="nav-links">
       <nav ref={navRef}>
-        <a href="#">Events</a>
-        <a href="#">Pricing</a>
-        <a href="#">About</a>
-        <a href="#">Login</a>
+        <Link to="/">Events</Link>
+        <Link to="/">Pricing</Link>
+        <Link to="/">About</Link>
+        <Link to="/login">Login</Link>
         
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes/>
