@@ -1,8 +1,18 @@
 import React from 'react'
+import Ticket from '../components/Ticket';
 
 const Checkout = () => {
   return (
-    <div>Checkout</div>
+    <div>
+        <div><h4>Checkout</h4></div>
+        <div>
+            <button>Back</button>
+            <h2>Choose Tickets</h2>
+        </div>
+        <div>
+          <Ticket />
+        </div>
+    </div>
   )
 }
 
